@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LINDEN BAKERY</title>
+    <meta
+      name="description"
+      content="LINDEN BAKERY is a refined neighborhood bakery serving artisan bread, seasonal pastries, and coffee in a warm, welcoming space."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="Linden Bakery home">
+          <img src="LOGO.png" alt="Linden Bakery logo" />
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation menu"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="#story">Our Story</a>
+          <a href="MENU.jpg" class="menu-popup-link">Menu</a>
+          <a href="#visit">Visit</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div
+          class="hero-media parallax-target"
+          data-parallax-speed="0.18"
+          data-parallax-scale="1.06"
+          aria-hidden="true"
+        ></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Mooresville bakery • baked fresh daily</p>
+          <h1>Neighborhood bread, pastry, and coffee made fresh each day.</h1>
+          <a class="button button-primary" href="#visit">Visit Linden Bakery</a>
+        </div>
+      </section>
+
+      <section class="story-section section-shell" id="story">
+        <div class="section-intro">
+          <p class="eyebrow">Our story</p>
+          <h2>Craft made carefully, served simply.</h2>
+        </div>
+        <div class="story-copy">
+          <p>
+            Linden Bakery is imagined as a neighborhood bakery where excellent
+            bread, laminated pastry, and thoughtful coffee feel effortless. The
+            focus is not on excess, but on doing a few things beautifully and
+            consistently every day.
+          </p>
+          <p>
+            Everything about the space is meant to feel warm and intentional:
+            flour-dusted mornings, good butter, long fermentation, and a room
+            that invites people to stay a little longer than they planned.
+          </p>
+        </div>
+      </section>
+
+      <section class="feature-section section-shell" id="menu">
+        <div class="feature-media">
+          <img
+            src="2.jpg"
+            alt="Freshly baked bread on a wooden surface"
+          />
+        </div>
+        <div class="feature-copy">
+          <p class="eyebrow">Fresh from the ovens</p>
+          <h2>A focused menu of breads, pastry, and coffee favorites.</h2>
+          <p>
+            A short menu keeps the experience clear and considered, with
+            signature pastries, naturally leavened bread, and coffee chosen to
+            pair beautifully with both.
+          </p>
+          <a class="button button-secondary menu-popup-link" href="MENU.jpg">View Menu</a>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div
+          class="testimonial-panel parallax-target"
+          data-parallax-speed="0.1"
+        >
+          <p class="quote-mark">“</p>
+          <blockquote>
+            The kind of bakery that turns a quick stop into the best part of the
+            day.
+          </blockquote>
+          <p class="quote-source">Neighborhood regular</p>
+        </div>
+      </section>
+
+      <section class="visit-section section-shell" id="visit">
+        <div class="section-intro">
+          <p class="eyebrow">Visit</p>
+          <h2>Visit Linden Bakery Today</h2>
+        </div>
+
+        <div class="visit-grid">
+          <div class="visit-card">
+            <h3>Address</h3>
+            <p>356 Morrison Plantation Pkwy</p>
+            <p>Suite B2, Mooresville, NC 28117</p>
+          </div>
+          <div class="visit-card">
+            <h3>Contact</h3>
+            <p><a href="tel:17043602460">(704) 360-2460</a></p>
+          </div>
+          <div class="visit-card">
+            <h3>Hours</h3>
+            <ul class="hours-list" aria-label="Opening hours">
+              <li data-day="1"><span>Monday</span><span>Closed</span></li>
+              <li data-day="2"><span>Tuesday</span><span>Closed</span></li>
+              <li data-day="3"><span>Wednesday</span><span>7:30am-3pm</span></li>
+              <li data-day="4"><span>Thursday</span><span>7:30am-3pm</span></li>
+              <li data-day="5"><span>Friday</span><span>7:30am-3pm</span></li>
+              <li data-day="6"><span>Saturday</span><span>8am-3pm</span></li>
+              <li data-day="0"><span>Sunday</span><span>8am-3pm</span></li>
+            </ul>
+            <p class="hours-note">Holiday hours may vary.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <iframe
+          title="Map to Linden Bakery"
+          src="https://www.google.com/maps?q=356+Morrison+Plantation+Pkwy+Suite+B2,+Mooresville,+NC+28117&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <div class="menu-lightbox" hidden>
+      <button
+        class="menu-lightbox-close"
+        type="button"
+        aria-label="Close menu preview"
+      >
+        Close
+      </button>
+      <div class="menu-lightbox-backdrop"></div>
+      <div class="menu-lightbox-panel" role="dialog" aria-modal="true" aria-label="Linden Bakery menu">
+        <img src="MENU.jpg" alt="Linden Bakery menu" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
